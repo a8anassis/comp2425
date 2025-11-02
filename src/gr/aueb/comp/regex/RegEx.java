@@ -113,8 +113,8 @@ public class RegEx {
         return s.matches("^</?[\\w\\s=\"']+>$");
     }
 
-    public static void replace(String s) {
-        s = s.replaceAll("\\s{2,}", " ");
+    public static String replace(String s) {
+        return s.replaceAll("\\s{2,}", " ");
     }
 
     public static String[] strSplit(String s) {
